@@ -55,7 +55,7 @@ public class AdminController {
 	}
 	
 	@PostMapping(path = "/test")
-	public String addTest(HttpServletRequest req,Model model) {
+	public String addTests(HttpServletRequest req,Model model) {
 		
 		HttpSession session = req.getSession();
 		
@@ -84,7 +84,7 @@ public class AdminController {
 	
 	@Transactional
 	@PostMapping(path = "/question")
-	public String addQuestion(HttpServletRequest req, Model model) {
+	public String addQuestions(HttpServletRequest req, Model model) {
 		
 		HttpSession session = req.getSession();
 		
